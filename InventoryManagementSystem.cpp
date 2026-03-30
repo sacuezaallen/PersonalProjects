@@ -9,7 +9,6 @@ using namespace std;
     
     //  ARRAYS/TABLES
     int id[100] = {0}, quantity[100] = {0};
-    //https://stackoverflow.com/questions/23509348/how-to-set-all-elements-of-an-array-to-zero-or-any-same-value
     string name[100];
     float unitCost[100];
 
@@ -103,7 +102,6 @@ void addProduct(void)
         cout << "\nEnter Product ID: ";
         cin >> enterID;
            cin.ignore();// consumes new line
-                        // src: https://www.youtube.com/watch?v=Su3a6vTtTFw&t=179s
 
         if (enterID == 0)
         {
@@ -131,8 +129,6 @@ void addProduct(void)
 
             cout << "\nEnter Product Name: ";
             getline(cin, enterName); //used to consider spaces in between product names
-                                    //inabot po ako 1 hour para ma-figure out to hahaha
-                                    //src: https://cplusplus.com/doc/tutorial/basic_io/
             name[emptyArray] = enterName; //sets value to be the name
 
             cout << "\nEnter Unit Cost: ";
